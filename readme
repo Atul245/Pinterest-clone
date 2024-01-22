@@ -1,56 +1,41 @@
-<div class="modal">
-      <div class='carousel'>
-        <div id="close-carousel">
-          <div class="x">
-          <div id="barra1"></div>
-          <div id="barra2"></div>
-          </div>
-        </div>
-        <div class="setas">
-        <div class="seta-esq">
-        <div id='prev-card'><i class="fa-solid fa-angle-left" style="color: #ffffff;"></i></div>
-        </div>
-        <div class="seta-dir">
-        <div id='next-card'><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></div>
-        </div>
-        </div>
-        <div class="centered-container">
-      <img class="modal-content" src="" alt="">
-          </div>
-      </div>
-      <span class="close"></span>
-      </div>
-      <div class='carousel-images'>
-      <div class="card_small card_exp">
-        <img class="img_card" src="https://wallpaperaccess.com/full/176937.jpg" alt="">
-        <figcaption>The water was freezing!</figcaption>
-      </div>
-      <div class="card_small card_exp">
-        <img class="img_card" src="https://wallpaperaccess.com/full/176937.jpg" alt="">
-        <figcaption>The water was freezing!</figcaption>
-      </div>
-      <div class="card_medium card_exp">
-        <img class="img_card" src="https://img.freepik.com/fotos-gratis/floresta-do-outono_1182-869.jpg?w=2000" alt="">
-        <figcaption>The fall came early!</figcaption>
-      </div>
-      <div class="card_large card_exp">
-        <img class="img_card" src="https://images.hdqwalls.com/wallpapers/beautiful-landscape-digital-art-4k-tj.jpg" alt="">
-        <figcaption>The water was freezing!</figcaption>
-        </div>
-       <div class="card_small card_exp">
-        <img class="img_card" src="https://external-preview.redd.it/vBmSeLVnhHRFlK0Se7WloKYhvOJhQ2pgftaesz33K30.png?auto=webp&s=dd6b2756b75924d866413cdeabcc3c202f5974c2" alt="">
-        <figcaption>The water was freezing!</figcaption>
-      </div>
-      <div class="card_small card_exp">
-        <img class="img_card" src="https://www.estudokids.com.br/wp-content/uploads/2020/02/o-que-e-paisagem.jpg" alt="">
-        <figcaption>The water was freezing!</figcaption>
-      </div>
-      <div class="card_medium card_exp">
-        <img class="img_card" src="https://i.pinimg.com/736x/09/45/b8/0945b873ddd15f862b82890f82767e39.jpg" alt="">
-        <figcaption>The water was freezing!</figcaption>
-      </div>
-      <div class="card_large card_exp">
-        <img class="img_card" src="https://c.wallhere.com/photos/ab/f5/AI_art_landscape_digital_art_ocean_view_reflection_rocks_sunset_clouds-2223954.jpg!d" alt="">
-        <figcaption>The water was freezing!</figcaption>
-        </div>
-      </div>
+# Pinterest Clone Project
+
+## Introduction
+
+Welcome to the Pinterest clone project! This web application allows users to discover and save images to personalized boards. Users can create, edit, and delete boards, pin images to them, and explore pins created by other users. The project also features user authentication and authorization to ensure a secure and personalized experience.
+
+## Prerequisites
+
+Before you dive into the project, make sure you have the following installed on your system:
+
+- Node.js
+- npm
+- MongoDB
+
+## Getting Started
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/pinterest-clone.git
+
+# Change directory
+cd pinterest-clone
+
+# Install dependencies
+npm install
+Configuration
+Create a .env file in the root directory and provide the necessary environment variables:
+
+env
+Copy code
+PORT=3000
+MONGODB_URI=mongodb://localhost:27017/pinterest_clone
+SESSION_SECRET=your_session_secret
+Run the Application
+bash
+Copy code
+# Start the application
+npm start
+Visit http://localhost:3000 in your browser to access the Pinterest clone.
