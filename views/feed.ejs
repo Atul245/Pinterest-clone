@@ -1,0 +1,89 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/stylesheets/feed.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<body>
+  <div class="header">
+    <a href="/feed">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/pinterest-round-color-icon.png" class="icon pinterest-icon">
+    </a>
+    <div class="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="navigation">
+      <li>Home</li>
+      <li>Explore</li>
+      <li>Create</li>
+    </ul>
+    <div class="search-bar">
+      <img src="https://www.brilliantlightingcenter.com/data/images/icons/search.svg" class="search-icon">
+      <input type="text" placeholder="Search">
+    </div>
+    <div class="nav-icons">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/bell-icon.png" class="icon nav-icon">
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/speech-bubble-black-icon.png" class="icon nav-icon">
+      <a href="/profile">
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/angle-bottom-icon.png" class="icon nav-icon arrow-icon">
+      </a>
+    </div>
+  </div>
+  
+    <div class="container_grid">
+      <div class="modal">
+        <div class='carousel'>
+          <div id="close-carousel">
+            <div class="x">
+            <div id="barra1"></div>
+            <div id="barra2"></div>
+            </div>
+          </div>
+          <div class="setas">
+          <div class="seta-esq">
+          <div id='prev-card'><i class="fa-solid fa-angle-left" style="color: #ffffff;"></i></div>
+          </div>
+          <div class="seta-dir">
+          <div id='next-card'><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></div>
+          </div>
+          </div>
+          <div class="centered-container">
+        <img class="modal-content" src="" alt="">
+            </div>
+        </div>
+        <span class="close"></span>
+        </div>
+
+      <div class='carousel-images'>
+        <% posts.forEach(function(post) { %>
+          <% var randomClass = getRandomClass(); %>
+          <div class="<%= randomClass %> card_exp">
+            <img class="img_card" src="/images/uploads/<%= post.image %>" alt="">
+            <figcaption><%= post.imageText %></figcaption>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+
+  <script>
+    $(".grid").imagesLoaded(function() {
+      $(".grid").masonry({
+        itemSelector: ".grid-item"
+      });
+    });
+  </script>
+  <script src="/javascripts/feed.js"></script>
+</body>
+
+</html>
